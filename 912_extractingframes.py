@@ -26,7 +26,7 @@ def extract_frames(video_path, output_dir):
             continue
 
         # Save every 25th frame
-        if frame_count % 25 == 0:
+        if frame_count % 20 == 0:
             saved_count += 1
             frame_name = f"frame_{saved_count:05d}.jpg"
             frame_path = os.path.join(output_dir, frame_name)
